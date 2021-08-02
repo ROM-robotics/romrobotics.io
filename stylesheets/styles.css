@@ -111,9 +111,16 @@ header {
 }
 
 header ul {
-  list-style:none;
+  height: 40px;
+  padding: 150px;
+  width: 270px;
+}
+
+/*
+header ul {
+  
   height:40px;
-  padding:0;
+  padding: 100px;
   background: #f4f4f4;
   border-radius:5px;
   border:1px solid #e0e0e0;
@@ -134,7 +141,7 @@ header li:first-child a {
 header li:last-child a {
   border-radius:0 5px 5px 0;
 }
-
+*/
 header ul a {
   line-height:1;
   font-size:11px;
@@ -160,7 +167,7 @@ strong {
 
 header ul li + li + li {
   border-right:none;
-  width:89px;
+  /*width:89px;
 }
 
 header ul a strong {

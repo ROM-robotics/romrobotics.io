@@ -14,8 +14,20 @@
     <![endif]-->
   </head>
   <body>
+
     <div class="wrapper">
-     
+
+      <header>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <ul>
+          <li><button id="mybtn" onclick='changeImage("embed_note_1.png");'> stm32 မှတ်စု   ၁    မှတ်မိမှတ်ရာ       </button> </li>
+          <li><button id="mybtn" onclick='changeImage("embed_note_2.png");'> stm32 မှတ်စု   ၂    Eclipse အပိုင်း ၁  </button> </li>
+          <li><button id="mybtn" onclick='changeImage("embed_note_3.png");'> stm32 မှတ်စု   ၃   CMSIS           </button> </li>
+          <li><button id="mybtn" onclick='changeImage("embed_note_4.png");'> stm32 မှတ်စု   ၄   Keil            </button> </li>
+          <li><button id="mybtn" onclick='changeImage("embed_note_5.png");'> stm32 မှတ်စု   ၅   LED Blink with BSP</button> </li>
+        </ul>
+      </header>
+
       <section>
 
         <!-- rom add -->
@@ -30,7 +42,7 @@
             <li> | </li>
 
             <li class="nav-item">
-              <a id="btn_projects" class="nav-link active" href="https://google.com">home</a>
+              <a id="btn_projects" class="nav-link active" href="index.html">home</a>
             </li>
             <li> | </li>
 
@@ -46,7 +58,7 @@
 
            
             <li class="nav-item">
-              <a id="btn_cv" class="nav-link" href="https://google.com">embedded</a>
+              <a id="btn_cv" class="nav-link" style="font-size: 18px;" href="embedded.html">embedded</a>
             </li>
             <li> | </li>
 
@@ -64,14 +76,22 @@
           </ul>
 
         </nav>
-
+        
+        <!-- HERE YOUR POST :3 -->
+        <img id="img" src="img/embedded/embed_note_1.png"/>
         <!-- finished -->
-        <img src="img/embedded/note1.png"/>
-    
       </section>
+      
+      
  
       
     </div>
     <script src="javascripts/scale.fix.js"></script>
+    <script>
+      function changeImage(myImage) {
+        document.getElementById('img').src = "img/embedded/"+myImage;
+        
+      }
+    </script>
   </body>
 </html>
