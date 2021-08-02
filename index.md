@@ -1,7 +1,10 @@
 <style>
 mark{
+  color:black;
+}
+mark:hover{
   color:red;
-  }
+}
 </style>
 ## [<span style="color:black">about</span>](https://google.com) | <mark>home</mark> | embedded | linux | robots
 
