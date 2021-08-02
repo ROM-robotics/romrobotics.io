@@ -1,6 +1,7 @@
 <style>
 mark{
   color:black;
+  background-color:none;
 }
 mark:hover{
   color:red;
