@@ -1,14 +1,14 @@
 <style>
 mark{
   color:black;
-  background-color:green;
+  background-color:transparent;
 }
 mark:hover{
   color:red;
   background-color:transparent;
 }
 </style>
-## [<span style="color:black">about</span>](https://google.com) | <mark>home</mark> | embedded | linux | robots
+## [<mark>about</mark>](https://google.com)    |    [<mark>home</mark>](https://google.com)    |    [<mark>embedded</mark>](https://google.com)    |    [<mark>linux</mark>](https://google.com)    |    [<mark>robots</mark>](https://google.com)
 
 You can use the [editor on GitHub](https://github.com/GreenGhostMan/romrobotics.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
