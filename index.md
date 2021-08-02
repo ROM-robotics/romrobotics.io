@@ -1,10 +1,11 @@
 <style>
 mark{
   color:black;
-  background-color:none;
+  background-color:green;
 }
 mark:hover{
   color:red;
+  background-color:transparent;
 }
 </style>
 ## [<span style="color:black">about</span>](https://google.com) | <mark>home</mark> | embedded | linux | robots
