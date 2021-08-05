@@ -28,6 +28,8 @@
           <li><button id="mybtn" class="em_class em_class6" onclick='changeImage("6_embed_note_processor_op_mode.png");'> ၆  Processor Operation Mode </button> </li>
           <li><button id="mybtn" class="em_class em_class7" onclick='changeImage("7_embed_note_processor_access_level.png");'> ၇  Processor Access Level</button> </li>
           <li><button id="mybtn" class="em_class em_class8" onclick='changeImage("8_embed_note_processor_register_1.png");'> ၈ Core register 1 </button></li>
+          <li><button id="mybtn" class="em_class em_class9" onclick='changeImage("9_embed_note_processor_register_2.png");'> ၉ Core register 2 </button></li>
+          <li><button id="mybtn" class="em_class em_class10" onclick='changeImage("10_embed_note_processor_register_3.png");'> ၁၀ Core register 3 </button></li>
         </ul>
       </header>
 
@@ -115,6 +117,18 @@
           const link = document.querySelector("#code-link");
           link.appendChild(tag);
 
+        }
+        else if( number == "9")
+        {
+          var tag = document.createElement("a");
+          var linkText = document.createTextNode("Code ကိုဒီမှာယူပါ။");
+          tag.appendChild(linkText);
+          tag.title="mutitle";
+          tag.id = "git-link";
+          tag.href="https://github.com/GreenGhostMan/Workspace/tree/main/CubeMXKeilWorkspace/f3blinkAndCoreRegisters/f3CoreRegister";
+          
+          const link = document.querySelector("#code-link");
+          link.appendChild(tag);
         }
         else if(number !=8 && document.getElementById("git-link") ){
           var elem = document.getElementById("git-link");
