@@ -30,6 +30,9 @@
           <li><button id="mybtn" class="em_class em_class8" onclick='changeImage("8_embed_note_processor_register_1.png");'> ၈ Core register 1 </button></li>
           <li><button id="mybtn" class="em_class em_class9" onclick='changeImage("9_embed_note_processor_register_2.png");'> ၉ Core register 2 </button></li>
           <li><button id="mybtn" class="em_class em_class10" onclick='changeImage("10_embed_note_processor_register_3.png");'> ၁၀ Core register 3 </button></li>
+          <li><button id="mybtn" class="em_class em_class10" onclick='changeImage("11_embed_note_primask.png");'>၁၁ PRIMASK </button></li>
+          <li><button id="mybtn" class="em_class em_class10" onclick='changeImage("12_embed_note_faultmask.png");'>၁၂ FAULTMASK </button></li>
+          <li><button id="mybtn" class="em_class em_class10" onclick='changeImage("13_embed_note_reset_sequence.png");'> ၁၃ Reset Sequence</button></li>
         </ul>
       </header>
 
@@ -107,6 +110,11 @@
         
         if( number == "8")
         {
+          if(number !=8 && document.getElementById("git-link") ) {
+          var elem = document.getElementById("git-link");
+          elem.parentNode.removeChild(elem);
+          }
+
           var tag = document.createElement("a");
           var linkText = document.createTextNode("Code ကိုဒီမှာယူပါ။");
           tag.appendChild(linkText);
@@ -120,16 +128,22 @@
         }
         else if( number == "9")
         {
+          if(number !=8 && document.getElementById("git-link") ){
+          var elem = document.getElementById("git-link");
+          elem.parentNode.removeChild(elem);
+          }
+
           var tag = document.createElement("a");
           var linkText = document.createTextNode("Code ကိုဒီမှာယူပါ။");
           tag.appendChild(linkText);
           tag.title="mutitle";
           tag.id = "git-link";
-          tag.href="https://github.com/GreenGhostMan/Workspace/tree/main/CubeMXKeilWorkspace/f3blinkAndCoreRegisters/f3CoreRegister";
+          tag.href="https://github.com/GreenGhostMan/Workspace/tree/main/CubeMXKeilWorkspace/f3ProcessorMode/f3ProcessorMode";
           
           const link = document.querySelector("#code-link");
           link.appendChild(tag);
         }
+        
         else if(number !=8 && document.getElementById("git-link") ){
           var elem = document.getElementById("git-link");
           elem.parentNode.removeChild(elem);
